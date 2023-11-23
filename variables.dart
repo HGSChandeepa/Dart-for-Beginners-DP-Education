@@ -102,6 +102,11 @@ void main() {
   String isFlutterEasyString = isFlutterEasy.toString();
   print(isFlutterEasyString);
 
+  //null
+  Null myName = null;
+  print(myName);
+
+
   // Programming challenge
   /*Calculate the area of a circle
    Area = pi * r * r
