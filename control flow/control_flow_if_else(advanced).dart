@@ -1,6 +1,5 @@
 // complex conditions and nested if-else statements
 
-import 'dart:math';
 
 void main() {
 // Example 1: Checking if a number is between a specific range

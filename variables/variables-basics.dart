@@ -115,7 +115,7 @@ void main() {
 
 
   // Programming challenge
-  /*Calculate the area of a circle
+  /*Calculate the area of a circle with radius 10 units and display the result.   
    Area = pi * r * r
    pi = 3.142, r = 10
 
