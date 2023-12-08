@@ -6,7 +6,7 @@ Dart uses the List<E> class to manage lists.
 
 */
 
-import 'dart:async';
+import 'dart:svg';
 
 void main() {
   //explain first using the int
@@ -14,6 +14,9 @@ void main() {
 
   List<int> ageCollection = [21, 22, 23, 24, 25];
   print(ageCollection);
+
+  //print an index
+  print(ageCollection[2]);
 
   // String nameCollection = ["Samin", "chanduka", "pubudu"];
   List<String> nameCollection = ["Samin", "chanduka", "pubudu"];
@@ -50,6 +53,33 @@ void main() {
   dynamic studentData = [23, "Samin", 12.34, true];
   print(studentData);
 
+  //!explain final and const using the list
+  //final
+  final List<int> numbers = [1, 2, 3, 4, 5];
+  print(numbers);
+  //cant reasign to a final
+
+  // numbers = [10, 20, 30];
+
+  //but we can change the values or add new values
+  numbers[0] = 10;
+  print(numbers);
+  numbers.add(6);
+  print(numbers);
+
+  //const
+  const List<int> constNumbers = [1, 2, 3, 4, 5];
+  print(constNumbers);
+
+  //cant reasign to a const
+  // numbers2 = [10, 20, 30];
+
+  //but we can change the values or add new values
+  constNumbers[0] = 10;
+  print(constNumbers);
+  constNumbers.add(6);
+  print(constNumbers);
+
   //?List methodes
 
   /*
@@ -77,8 +107,8 @@ void main() {
   */
 
   //  length
-  List<int> numbers = [1, 2, 3, 4, 5];
-  print(numbers.length); // Output: 5
+  List<int> numbers1 = [1, 2, 3, 4, 5];
+  print(numbers1.length); // Output: 5
 
   //add
   List<int> numbers2 = [1, 2, 3, 4, 5];
