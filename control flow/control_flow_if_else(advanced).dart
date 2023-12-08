@@ -1,6 +1,5 @@
 // complex conditions and nested if-else statements
 
-
 void main() {
 // Example 1: Checking if a number is between a specific range
   int number = 25;
@@ -65,7 +64,7 @@ void main() {
   //
 
   String season = "";
-  String month = "Feb";
+  String month = "Jan";
   bool isMonthValid = true;
 
   if (isMonthValid) {
@@ -75,7 +74,7 @@ void main() {
       season = "Summer";
     } else if (month == "Aug" || month == "Sep" || month == "Oct") {
       season = "Autumn";
-    } else if (month == "Nov" || month == "Dec" || month == "Jan") {
+    } else if (month == "Nov" || month == "Dec") {
       season = "Winter";
     } else {
       season = "Invalid";
