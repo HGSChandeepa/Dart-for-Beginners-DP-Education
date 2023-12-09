@@ -67,6 +67,8 @@ void main() {
   Set<int> numberSet2 = {1, 2, 3, 4, 5};
   numberSet2.add(6);
   print(numberSet2); // {1, 2, 3, 4, 5, 6}
+  numberSet2.add(3);
+  print(numberSet2); // { 1, 2, 3, 4, 5, 6 }
 
   //addAll() method - add a multiple elements to the set
   Set<int> numberSet3 = {1, 2, 3, 4, 5};
