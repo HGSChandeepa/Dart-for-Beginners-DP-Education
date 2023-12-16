@@ -187,5 +187,59 @@ void main() {
 
   print(nameCollection22); // {apple: samin, banana: chanduka, melon: samin new}
 
+  //!challenge 11 - map answers
 
+  //part 1
+  Map<String, List<int>> studentMarks1 = {
+    'Student1': [85, 90, 78, 92, 88],
+    'Student2': [75, 80, 85, 88, 90],
+    'Student3': [92, 88, 76, 95, 80],
+    'Student4': [78, 85, 90, 82, 88],
+  };
+
+  // Print the marks for each student
+  studentMarks1.forEach((student, marks) {
+    print('$student\'s Marks: $marks');
+  });
+  //---------------------------
+  //part 2
+  Map<String, Map<String, int>> studentMarks2 = {
+    'Student1': {
+      'Subject1': 85,
+      'Subject2': 90,
+      'Subject3': 78,
+      'Subject4': 92,
+      'Subject5': 88
+    },
+    'Student2': {
+      'Subject1': 75,
+      'Subject2': 80,
+      'Subject3': 85,
+      'Subject4': 88,
+      'Subject5': 90
+    },
+    'Student3': {
+      'Subject1': 92,
+      'Subject2': 88,
+      'Subject3': 76,
+      'Subject4': 95,
+      'Subject5': 80
+    },
+    'Student4': {
+      'Subject1': 78,
+      'Subject2': 85,
+      'Subject3': 90,
+      'Subject4': 82,
+      'Subject5': 88
+    },
+  };
+
+  // Print the marks for each student
+  studentMarks2.forEach((student, marks) {
+    print('$student\'s Marks:');
+    marks.forEach((subject, mark) {
+      print('$subject: $mark');
+    });
+    print(''); // Add a new line for separation
+  });
 }

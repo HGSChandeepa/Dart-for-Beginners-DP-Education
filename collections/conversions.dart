@@ -25,14 +25,14 @@ void main() {
   //example 1
   List<int> numbers = [1, 2, 3, 4, 5];
   Map<int, int> numbersMap = Map.fromIterable(numbers,
-      key: (item) => item, value: (item) => item * 10);
+      key: (number) => number, value: (number) => number * 10);
   print(numbersMap); // {1: 10, 2: 20, 3: 30, 4: 40, 5: 50}
 
   //TODO:convert a set to a map
   //example 1
   Set<int> numbers2 = {1, 2, 3, 4, 5};
   Map<int, int> numbersMap2 = Map.fromIterable(numbers2,
-      key: (item) => item, value: (item) => item * 10);
+      key: (number) => number, value: (number) => number * 10);
   print(numbersMap2); // {1: 10, 2: 20, 3: 30, 4: 40, 5: 50}
 
   //TODO:Convert a set to a list
