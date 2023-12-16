@@ -177,4 +177,15 @@ void main() {
   Map<int, String> nameCollection21 = {0: "apple", 1: "banana", 2: "melon"};
   nameCollection21.updateAll((key, value) => "fruit");
   print(nameCollection21); // {0: fruit, 1: fruit, 2: fruit}
+
+  Map<String, String> nameCollection22 = {
+    "apple": "samin",
+    "banana": "chanduka",
+    "melon": "pubudu"
+  };
+  nameCollection22.update("melon", (value) => "samin new");
+
+  print(nameCollection22); // {apple: samin, banana: chanduka, melon: samin new}
+
+
 }
