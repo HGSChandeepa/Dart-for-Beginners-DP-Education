@@ -109,13 +109,7 @@ void main() {
     print("water level is not provided"); 
   }
 
-  //marks calculation
-  //define the condition
-  //A - 75 or more 
-  //B - 65 or more
-  //C - 55 or more
-  //S - 45 or more
-  //W - less than 45
+
   
   int marks = 80;
   if (marks >= 75) {
