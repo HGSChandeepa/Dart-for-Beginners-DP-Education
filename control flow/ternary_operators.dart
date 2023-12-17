@@ -1,4 +1,5 @@
 void main() {
+  // Example 1: Checking for a boolean value
   bool isWeekend = true;
   if (isWeekend) {
     print('It\'s the weekend!');
@@ -16,12 +17,13 @@ void main() {
   print(result);
 
   //ternary operator with multiple conditions
-  // int number = 25;
-  // String result = number >= 10 && number <= 50
-  //     ? '$number is between 10 and 50.'
-  //     : '$number is outside the range of 10 and 50.';
 
-  // print(result);
+  int number2 = 25;
+  String result2 = number2 >= 10 && number2 <= 50
+      ? '$number is between 10 and 50.'
+      : '$number is outside the range of 10 and 50.';
+
+  print(result2);
 
   ///ternary operator question
   ///Design a program to determine whether an individual is allowed to enter a club. The program has information about the person's age (age), permission status (hasPermission), and the current day of the week (day).
@@ -31,8 +33,8 @@ void main() {
   int age = 18;
   bool hasPermission = false;
   bool isAdult = age >= 18;
-  String result2 = (isAdult && hasPermission) || (age >= 21 && day == 'Friday')
+  String result22 = (isAdult && hasPermission) || (isAdult && day == 'Friday')
       ? 'You can enter the club.'
       : 'You do not have permission to enter.';
-  print(result2);
+  print(result22);
 }
