@@ -14,16 +14,72 @@ It’s a good practice to use functions to divide a program into smaller and mor
 */
 
 void main() {
-
-
-  //syntax of the function
-  
-  // returnType functionName(parameters) {
-  //   // code to be executed
-  // }
-  
-  void add (int a , int b){
-    print(a+b);
+  //functions  with no parameters
+  //example 1
+  void sayHello() {
+    print("Hello World");
   }
 
+  //example 2
+  void dateTime() {
+    print(DateTime.now());
+  }
+
+  //example 3
+  void printName() {
+    print("My name is John Doe");
+  }
+
+  //!functions with parameters
+
+  //example 1
+  void sayHelloTo(String name) {
+    print("Hello $name");
+  }
+
+  //example 2
+  void printNameAndAge(String name, int age) {
+    print("My name is $name and I am $age years old");
+  }
+
+  //example 3
+  int addNumbers(int a, int b) {
+    return a + b;
+  }
+
+  //example 4 with 4 parameters
+  int addNumbersWithFourParameters(int a, int b, int c, int d) {
+    return a + b + c + d;
+  }
+
+  //example 5 with 4 parameters with different data types
+  double addNumbersWithFourParametersWithDifferentDataTypes(
+      int a, double b, int c, double d) {
+    return a + b + c + d;
+  }
+
+  // function to find the given number is even or odd
+  void evenOrOdd(int number) {
+    if (number % 2 == 0) {
+      print("$number is even");
+    } else {
+      print("$number is odd");
+    }
+  }
+
+  //named parameters
+  void printNameAndAgeWithNamedParameters({String name = " ", int age = 0}) {
+    print("My name is $name and I am $age years old");
+  }
+
+  //required parameters
+  void RequiredParameters({required String name, required int age}) {
+    print("My name is $name and I am $age years old");
+  }
+
+  //?both in one example
+  void connect(String host,
+      {int port = 3306, required String user, required String password}) {
+    print('Connecting to $host on $port using $user/$password...');
+  }
 }
