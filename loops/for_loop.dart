@@ -113,7 +113,7 @@ void main() {
   int maxLength = 0;
   for (int i = 0; i < words.length; i++) {
     if (words[i].length > maxLength) {
-      maxLength = words[i].length; 
+      maxLength = words[i].length;
     }
   }
 
@@ -127,4 +127,36 @@ void main() {
   // Output the results
   print('Longest word length: $maxLength');
   print('Average word length: ${averageLength.toStringAsFixed(2)}');
+
+  //!for in loop
+  /*
+
+    Use the for loop when you need to iterate a specific number of times and you have control over the loop variables.
+    Use the for-in loop when you want to iterate over the elements of an iterable without dealing with indices or explicit counters.
+
+  */
+  // Example with a List
+  List<int> numbers33 = [1, 2, 3, 4, 5];
+
+  // Iterate over elements in the list
+  for (int number in numbers33) {
+    print(number);
+  }
+
+  // Example with a Set
+  Set<String> names3 = {'Alice', 'Bob', 'Charlie'};
+
+  // Iterate over elements in the set
+  for (String name in names3) {
+    print(name);
+  }
+
+  // Example with a Map
+  Map<String, int> ages = {'Alice': 25, 'Bob': 30, 'Charlie': 35};
+
+  // Iterate over key-value pairs in the map
+  for (String name in ages.keys) {
+    int age = ages[name]!;
+    print('$name is $age years old');
+  }
 }
