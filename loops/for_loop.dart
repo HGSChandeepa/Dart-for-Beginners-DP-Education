@@ -159,4 +159,12 @@ void main() {
     int age = ages[name]!;
     print('$name is $age years old');
   }
+
+  //?for each loop
+  Map<String, int> agesnew = {'Alice': 25, 'Bob': 30, 'Charlie': 35};
+
+  // Using forEach with a map
+  agesnew.forEach((String name, int age) {
+    print('$name is $age years old');
+  });
 }
