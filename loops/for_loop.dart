@@ -57,16 +57,7 @@ void main() {
     }
   }
 
-  //looop a map
-  Map<String, String> nameCollection = {
-    "apple": "Samin",
-    "banana": "chanduka",
-    "melon": "pubudu"
-  };
 
-  for (int i = 0; i < nameCollection.length; i++) {
-    print(nameCollection[i]);
-  }
 
   //Write a Dart program that takes a list of integers as input and outputs the product of all positive numbers in the list.
   List<int> numbers2 = [1, -2, 3, 4, -5];

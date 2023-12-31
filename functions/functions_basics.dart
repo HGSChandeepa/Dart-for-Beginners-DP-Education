@@ -82,4 +82,12 @@ void main() {
       {int port = 3306, required String user, required String password}) {
     print('Connecting to $host on $port using $user/$password...');
   }
+
+
+  //arrow function
+  int addTwoNumbers(int a, int b) => a + b;
+
+  String sayHelloArrowFunctions (String name) => "Hello $name";
+  
+
 }
