@@ -37,7 +37,7 @@ void main() {
     k++;
   }
 
-  //even and odd numbers calculator
+  //store all the even and odd numbers between 1 - 200
 
   //modulus operator %
   int number = 0;

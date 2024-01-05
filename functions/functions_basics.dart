@@ -68,12 +68,12 @@ void main() {
   }
 
   //named parameters
-  void printNameAndAgeWithNamedParameters({String name = " ", int age = 0}) {
+  void withNamedParameters({String name = " ", int age = 0}) {
     print("My name is $name and I am $age years old");
   }
 
   //required parameters
-  void RequiredParameters({required String name, required int age}) {
+  void requiredParameters({required String name, required int age}) {
     print("My name is $name and I am $age years old");
   }
 
@@ -83,11 +83,10 @@ void main() {
     print('Connecting to $host on $port using $user/$password...');
   }
 
-
   //arrow function
   int addTwoNumbers(int a, int b) => a + b;
 
-  String sayHelloArrowFunctions (String name) => "Hello $name";
-  
+  String sayHelloArrowFunctions(String name) => "Hello $name";
 
+  //  connect('localhost', user: 'root', password: 'secret');
 }
