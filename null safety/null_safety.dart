@@ -15,6 +15,9 @@ To mark an existing type nullable, you place a question mark after the type. For
 */
 
 void main() {
+  //? nullable types
+  //start by int a ; a = null; //error
+
   String name = "John Doe";
   print(name.length);
 
@@ -31,10 +34,45 @@ void main() {
   int? age;
   print(age);
 
-  printNameAndAgeWithNullableParameters(name: "John Doe", age: null);
-}
+  //functions with nullable parameters
+  void printNameAndAgeWithNullableParameters({String? name, int? age}) {
+    print("My name is $name and I am $age years old");
+  }
 
-//functions with nullable parameters
-void printNameAndAgeWithNullableParameters({String? name, int? age}) {
-  print("My name is $name and I am $age years old");
+  printNameAndAgeWithNullableParameters(name: "John Doe", age: null);
+
+//check weathere a variable is null or not
+  List<int>? scores = [1, 2, 3, 4, 5];
+  print(scores[3]); // 4
+  scores = null;
+
+  //null aware index operator
+  print(scores?[3]); // null
+
+  //?assign a fallback value if the variable is null
+  String? newTitle = "Flutter And Dart";
+  String updatedTitle = newTitle ?? "Dart";
+  print(updatedTitle); // Flutter And Dart
+
+  //? ! operator to tell the compiler that the variable is not null
+  String? newTitle2 = "Flutter And Dart";
+
+  //i am sure that newTitle2 is not null
+  int newTitleLength = newTitle2!.length;
+  print(newTitleLength); // Flutter And Dart
+
+  //?  null safety in functions
+  String? greetUser(String name) {
+    if (name.isNotEmpty) {
+      return "Hello, $name!";
+    } else {
+      return null;
+    }
+  }
+
+  String? greeting = greetUser("John Doe");
+  print(greeting); // Hello, John Doe!
+
+  greeting = greetUser("");
+  print(greeting); // null
 }
