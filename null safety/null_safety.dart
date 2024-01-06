@@ -49,10 +49,17 @@ void main() {
   //null aware index operator
   print(scores?[3]); // null
 
+  //list of nullable values
+  List<int?> scores2 = [1, 2, 3, 4, 5, null];
+  print(scores2[3]); // 4
+
   //?assign a fallback value if the variable is null
   String? newTitle = "Flutter And Dart";
-  String updatedTitle = newTitle ?? "Dart";
+  String? updatedTitle = newTitle ?? "Dart";
+
   print(updatedTitle); // Flutter And Dart
+  updatedTitle = null;
+  print(updatedTitle); // Dart
 
   //? ! operator to tell the compiler that the variable is not null
   String? newTitle2 = "Flutter And Dart";
