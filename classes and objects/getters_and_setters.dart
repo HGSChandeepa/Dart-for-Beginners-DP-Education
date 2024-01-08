@@ -88,7 +88,13 @@ class Person {
   }
 
   // Getter for the full name property
-  String get fullName => '$_firstName $_lastName';
+  String get fullName {
+    if (_firstName != null && _lastName != null) {
+      return "$_firstName $_lastName";
+    } else {
+      return "empty";
+    }
+  }
 }
 
 void main() {
