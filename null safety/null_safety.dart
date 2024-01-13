@@ -61,7 +61,7 @@ void main() {
   updatedTitle = null;
   print(updatedTitle); // Dart
 
-  //? ! operator to tell the compiler that the variable is not null
+  //? ! operator to tell the compiler that the variable is not null  (null assertion operator)
   String? newTitle2 = "Flutter And Dart";
 
   //i am sure that newTitle2 is not null

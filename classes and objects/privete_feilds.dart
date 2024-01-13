@@ -1,4 +1,6 @@
 class Point {
+
+  
   int _x = 0;
   int _y = 0;
 
