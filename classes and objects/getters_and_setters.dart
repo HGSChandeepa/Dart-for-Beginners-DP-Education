@@ -110,10 +110,15 @@ void main() {
 
   //---------------------
   Person person = Person(firstName: "John", lastName: "Doe", age: 30);
+  //getter called for fullName
   print(person.fullName); // John Doe
+  //setter called for firstName
   person.firstName = "Jane";
+  //setter called for lastName
   person.lastName = "Smith";
+  //setter called for age
   person.age = 25;
+  //getter called for fullName
   print(person.fullName); // Jane Smith
   print(person.age); // 25
   person.age = 200; // Age must be between 0 and 150.

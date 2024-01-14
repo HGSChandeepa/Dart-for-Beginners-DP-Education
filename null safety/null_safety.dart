@@ -44,9 +44,9 @@ void main() {
 //check weathere a variable is null or not
   List<int>? scores = [1, 2, 3, 4, 5];
   print(scores[3]); // 4
-  scores = null;
 
-  //null aware index operator
+  //?null aware index operator
+  scores = null;
   print(scores?[3]); // null
 
   //list of nullable values
@@ -82,4 +82,18 @@ void main() {
 
   greeting = greetUser("");
   print(greeting); // null
+
+  String? getString() {
+    // Simulating a situation where the value might be null
+    String? nullableString =
+        DateTime.now().year == 2024 ? "Hello, Dart!" : null;
+
+    // Using the null assertion operator to assert that nullableString is not null
+    String nonNullableString = nullableString!;
+
+    return nonNullableString;
+  }
+
+  String? greeting2 = getString();
+  print(greeting2); // Hello, Dart!
 }
