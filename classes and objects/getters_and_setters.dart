@@ -31,9 +31,9 @@ class Person {
   // Constructor with named parameters
   Person(
       {required String firstName, required String lastName, required int age}) {
-    _firstName = this.firstName;
-    _lastName = this.lastName;
-    _age = this.age;
+    _firstName = firstName;
+    _lastName = lastName;
+    _age = age;
   }
 
   // Getter and setter for the first name property
