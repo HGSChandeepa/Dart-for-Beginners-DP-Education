@@ -6,10 +6,15 @@ Inheritance allows you to define a class that extends the functionality of anoth
 Dart supports single inheritance. It means that a class can inherit from a single class. Dart doesn’t support multiple inheritances. In other words, a class cannot inherit from two or more classes.
 */
 class Animal {
+  //feild
   String _name;
 
+  //constrctor
+
+  ///When you use the shorthand constructor syntax Animal(this._name);, Dart understands that you're declaring a constructor parameter _name and initializing the corresponding instance variable _name with the value passed to the constructor. Dart handles the initialization internally for you.
   Animal(this._name);
 
+  //getter
   String get name => _name;
 
   void eat() {
@@ -65,4 +70,5 @@ void main() {
   //calling the makeSound method of the Dog class
   dog.makeSound();
   dog.canJump(null);
+  dog.canJump(20);
 }

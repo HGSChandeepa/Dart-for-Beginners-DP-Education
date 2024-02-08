@@ -4,7 +4,7 @@
 // void main() {
 //   print(1);
 
-//   var future = Future<int>.delayed(Duration(seconds: 0), () => 2);
+//   var future = Future<int>.delayed(Duration(seconds: 2), () => 2);
 //   future.then((value) => print(value));
 
 //   print(3);
@@ -16,7 +16,7 @@
 // void main() async {
 //   print(1);
 
-//   var future = Future<int>.delayed(Duration(seconds: 0), () => 2);
+//   var future = Future<int>.delayed(Duration(seconds: 2), () => 2);
 //   var value = await future;
 //   print(value);
 
@@ -30,7 +30,7 @@
 // void main() async {
 //   print(1);
 //   try {
-//     var value = await Future<int>.delayed(Duration(seconds: 0),
+//     var value = await Future<int>.delayed(Duration(seconds: 2),
 //         () => throw Exception('An error from the future'));
 //     print(value);
 //   } catch (e) {
