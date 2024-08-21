@@ -52,8 +52,18 @@ void main() {
     }
   }
 }
-
-
+ // 1. other Answer
+void main() {
+  
+  bool rainDay = true;
+  
+  if(rainDay == true){
+    print("To day Rain Day");
+  }else{
+    print("To day sanny Day");
+  }
+  
+}
   */
 
   // -------------------------------------------------------------
