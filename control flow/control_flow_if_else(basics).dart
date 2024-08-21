@@ -53,6 +53,23 @@ void main() {
   }
 }
 
+1. another answer
+void main() {
+  bool isWeekend = true;
+  bool rainy = true;
+
+  if (isWeekend) {
+    if (rainy == false) {
+      print("Let's go to the park!");
+    }
+    if (rainy == true) {
+      print("Let's play computer game at home!");
+    }
+  }else{
+    print("Not a Weekend days");
+  }
+}
+
 
   */
 
