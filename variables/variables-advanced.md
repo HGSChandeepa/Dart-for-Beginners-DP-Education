@@ -128,13 +128,13 @@ b = 20.45;
 
 b= "flutter for beginners";
 print(b);
+
 /*
 ------------------------------------------------------------------------------------------------------
 main.dart:8:4: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
 b= "flutter for beginners";
    ^
 */
-
 ```
 
 ## dynamic
