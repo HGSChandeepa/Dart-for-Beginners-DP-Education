@@ -30,12 +30,12 @@ The postfix form increments or decrements the variable after its current value i
 #### example
 ```dart
 int c = 10;
-  int d = 20;
+int d = 20;
 
-  print(c++); //10
-  print(d--); //20
+print(c++); //10
+print(d--); //20
 
-  print("$c $d");
+print("$c $d");
 ```
 
 ###  Other operator examples
