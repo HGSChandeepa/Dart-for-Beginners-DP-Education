@@ -40,12 +40,13 @@ print("$miles miles is equal to $kilometers kilometers");
 ```dart
 const currentTime = DateTime.now();
 print(currentTime);
-
+/* 
 ------------------------------------------------------------------------------------------------------
 main.dart:3:30: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
 Try using a constructor or factory that is 'const'.
 const currentTime = DateTime.now();
                              ^^^
+*/
 ```
 
 ## final
@@ -61,11 +62,12 @@ final is used to declare a variable whose value cannot be changed.
 
 videoTitle = "Dart for beginners";
 print(videoTitle);
-
+/*
 ------------------------------------------------------------------------------------------------------
 main.dart:5:3: Error: Can't assign to the final variable 'videoTitle'.
   videoTitle = "Dart for beginners";
   ^^^^^^^^^^
+*
 ```
 ### example 2
 ```dart
@@ -76,10 +78,12 @@ print(currentTime);
 currentTime = DateTime(2021, 10, 10);
 print(currentTime);
 
+/*
 ------------------------------------------------------------------------------------------------------
 main.dart:6:3: Error: Final variable 'currentTime' might already be assigned at this point.
   currentTime = DateTime(2021, 10, 10);
   ^^^^^^^^^^^
+*/
 ```
 
 ## var
@@ -115,20 +119,21 @@ print(b);
 b = 20.45;
 print(b);
 
+/*
 ------------------------------------------------------------------------------------------------------
 main.dart:5:5: Error: A value of type 'double' can't be assigned to a variable of type 'int'.
 b = 20.45;
     ^
-```
-```dart
+*/
 
 b= "flutter for beginners";
 print(b);
-
+/*
 ------------------------------------------------------------------------------------------------------
 main.dart:8:4: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
 b= "flutter for beginners";
    ^
+*/
 
 ```
 
