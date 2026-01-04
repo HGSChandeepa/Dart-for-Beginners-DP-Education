@@ -12,9 +12,9 @@ if (10 > 5) {
 
 ```dart
 bool isGreater = true;
-  if (isGreater) {
-    print("yes , greater");
-  }
+if (isGreater) {
+  print("yes , greater");
+}
 ````
   ### watertank example
 
