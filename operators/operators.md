@@ -12,15 +12,15 @@ The prefix form increments or decrements the variable before its value is used i
 
  #### example
  ```dart
-  int a = 10;
-  int b = 20;
+int a = 10;
+int b = 20;
 
-  print(++a); //11
-  print(--b); //19
+print(++a); //11
+print(--b); //19
 
-  --a;
-  ++b;
-  print("$a $b");
+--a;
+++b;
+print("$a $b");
 ```
 
 ### postfix operators 
@@ -45,18 +45,17 @@ print("$c $d");
 The compound assignment operators combine an arithmetic operator with an assignment operator.
 
 ```dart
-  int e = 10;
-  print(e += 10); //20
+int e = 10;
+print(e += 10); //20
 
-  int f = 10;
-  print(f -= 10); //0
+int f = 10;
+print(f -= 10); //0
 
-  int g = 10;
-  print(g *= 10); //100
+int g = 10;
+print(g *= 10); //100
 
-  double h = 10;
-  print(h /= 10); //1
-}
+double h = 10;
+print(h /= 10); //1
 ```
 
 ##  Programming challenge 1
