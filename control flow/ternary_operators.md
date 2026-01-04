@@ -1,0 +1,51 @@
+### Example 1: Checking for a boolean value
+
+```dart
+bool isWeekend = true;
+if (isWeekend) {
+  print('It\'s the weekend!');
+} else {
+  print('It\'s a weekday.');
+}
+```
+
+## ternary operator
+
+```dart
+String day = isWeekend ? 'Weekend' : 'Weekday';
+print(day);
+```
+## simple ternary operator
+
+```dart
+int number = 25;
+String result = number == 25 ? 'Number is 25' : 'Number is not 25';
+print(result);
+````
+## ternary operator with multiple conditions
+
+```dart
+int number2 = 25;
+String result2 = number2 >= 10 && number2 <= 50
+    ? '$number is between 10 and 50.'
+    : '$number is outside the range of 10 and 50.';
+
+print(result2);
+```
+
+### ternary operator question
+Design a program to determine whether an individual is allowed to enter a club. The program has information about the person's age (age), permission status (hasPermission), and the current day of the week (day).
+
+The person is allowed to enter the club if they are an adult (age >= 18) and have permission to enter (hasPermission == true). Alternatively, if it's Friday and the person is an adult, they are allowed to enter the club regardless of their permission status.
+
+### answer
+
+```dart
+int age = 18;
+bool hasPermission = false;
+bool isAdult = age >= 18;
+String result22 = (isAdult && hasPermission) || (isAdult && day == 'Friday')
+    ? 'You can enter the club.'
+    : 'You do not have permission to enter.';
+print(result22);
+```
