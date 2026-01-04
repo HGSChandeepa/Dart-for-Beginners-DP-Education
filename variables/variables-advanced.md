@@ -119,6 +119,8 @@ print(b);
 main.dart:5:5: Error: A value of type 'double' can't be assigned to a variable of type 'int'.
 b = 20.45;
     ^
+```
+```dart
 
 b= "flutter for beginners";
 print(b);
