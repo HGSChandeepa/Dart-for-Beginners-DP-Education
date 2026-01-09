@@ -1,5 +1,7 @@
 # Dart for Beginners - DP
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+
 Welcome to the Dart for Beginners repository! 🚀 In this repository, you'll find code examples and lessons to help beginners learn Dart programming language.
 
 ## 📂[All Dart Lecture Slides🔗](https://drive.google.com/file/d/1jqWRXeOfGyeuq7jaOKvNMyFUC9rx8CB2/view?usp=sharing)
