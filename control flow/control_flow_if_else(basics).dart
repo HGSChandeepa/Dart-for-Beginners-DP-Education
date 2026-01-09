@@ -52,25 +52,18 @@ void main() {
     }
   }
 }
-
-1. another answer
+ // 1. other Answer
 void main() {
-  bool isWeekend = true;
-  bool rainy = true;
-
-  if (isWeekend) {
-    if (rainy == false) {
-      print("Let's go to the park!");
-    }
-    if (rainy == true) {
-      print("Let's play computer game at home!");
-    }
+  
+  bool rainDay = true;
+  
+  if(rainDay == true){
+    print("To day Rain Day");
   }else{
-    print("Not a Weekend days");
+    print("To day sanny Day");
   }
+  
 }
-
-
   */
 
   // -------------------------------------------------------------
